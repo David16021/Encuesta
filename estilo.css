@@ -28,11 +28,11 @@ article {
 	border-top:2px solid #00369c !important;
 }
 
-
+/*
 input[type=text]{
-	/*margin-left: 5px !important;
-	margin-right: 10px !important;*/
-}
+	margin-left: 5px !important;
+	margin-right: 10px !important;
+}*/
 textarea {
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
