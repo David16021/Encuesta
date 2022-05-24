@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>ICONTEC</title>
+	<meta name="theme-color" content="#00369c"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://admin.dataella.com/capturador/Icontec/Enc_ICONTEC2021/images/favicon.ico">
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script src="js/poll.js"></script>
+	<meta name="viewport" content="width=500, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="estilo.css">
+    <style>
+        #rowQuestion2, #rowQuestion4, #rowQuestion2-2, #rowQuestion4-4, #contentQuestionContact1, #contentQuestionContact2, #contentQuestionContact3, #contentQuestionContact4, #contentQuestionContact5 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+	<div class="headDiv">
+		<header>
+			<div class="row">
+				<div class="col-md-12" align="center">
+					<img  src="https://admin.dataella.com/capturador/Icontec/Enc_ICONTEC2021/images/banner-2022.jpg">
+				</div>
+			</div>
+		</header>
+	</div>
+	
+	<section class="container sect01">
+		<div style="font-size:18px"><b>CERTIFICACIÓN</b></div>
+		<div align="justify"><p></p></div>
+		
+		<div align="justify" class="subTitle"><b>CONTACTO</b></div>
+		<form class="form-group" id="form" action="actions/encuestaCertificacionAction.php" method="POST">
+			<input type="hidden" name="ip" value="181.57.18.79">
+						<input type="hidden" name="dispositivo" value="Desktop">
+						<input type="hidden" name="fuente" value="">
+						<input type="hidden" name="idcamp" value="">
+						<input type="hidden" name="url_respuesta" value="https://www.rbmcolombia.com/wps/portal/index">
+			<div class="row">
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">1</span>
+					<article class="card">
+						<div class="card-body">
+							<label>¿Ha contratado previamente los servicios de ICONTEC?</label>
+							<br>
+							<br>
+							<table class="table table-striped table-sm table-bordered text-center" id="table-det">
+								<thead>
+									<th>Si</th>
+									<th>No</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">
+											<input required type="radio" name="cgr_01-1" id="cgr_01-1_1" class="form-control" value="Si">
+										</td>
+										<td>
+											<input required type="radio" name="cgr_01-1" id="cgr_01-1_2" class="form-control" value="No">
+										</td>
+									</tr>
+								</tbody>
+							</table>		
+						</div>
+					</article>
+				</div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">2</span>
+					<article class="card">
+						<div class="card-body">
+							<label>¿Cómo se contactó con el ICONTEC?</label>
+							<br>
+							<br>
+							<table class="table table-striped table-sm table-bordered text-center" id="table-det">
+								<thead>
+									<th>Fue contactado por ICONTEC</th>
+									<th>Usted contactó a ICONTEC</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">
+											<input required type="radio" name="cgr_02" id="cgr_02_1" class="form-control" value="Fue contactado por ICONTEC">
+										</td>
+										<td>
+											<input required type="radio" name="cgr_02" id="cgr_02_2" class="form-control" value="Usted contactó a ICONTEC">
+										</td>
+									</tr>
+								</tbody>
+							</table>		
+						</div>
+					</article>
+				</div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">3</span>
+					<article class="card">
+						<div class="card-body">
+							<p>¿Cuál fue el medio de contacto?</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+										<th>¿CUAL?</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Teléfono</td>
+											<td class="">
+												<input required type="radio" name="cgr_03" id="cgr_03_1" class="form-control check-otro" value="Teléfono">
+											</td>
+                                            <td></td>
+										</tr>
+                                        <tr>
+											<td>Correo</td>
+											<td class="">
+												<input required type="radio" name="cgr_03" id="cgr_03_2" class="form-control check-otro" value="Correo">
+											</td>
+                                            <td></td>
+										</tr>
+                                        <tr>
+											<td>Página web</td>
+											<td class="">
+												<input required type="radio" name="cgr_03" id="cgr_03_3" class="form-control check-otro" value="Página web">
+											</td>
+                                            <td></td>
+										</tr>
+                                        <tr>
+											<td>En persona</td>
+											<td class="">
+												<input required type="radio" name="cgr_03" id="cgr_03_4" class="form-control check-otro" value="En persona">
+											</td>
+                                            <td></td>
+										</tr>
+                                        <tr>
+											<td>Otro</td>
+											<td class="">
+												<input required type="radio" name="cgr_03" id="cgr_03_5" class="form-control check-otro" value="Otro">
+											</td>
+                                            <td>
+                                                <div class="form-group m-0">
+                                                    <input type="text" name="who" id="who" class="form-control m-0" />
+                                                </div>
+                                            </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">4</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Califique de 1 a 5 el canal de atención, en donde 1 es el puntaje más bajo y 5 el más alto.</p>
+							<br>			
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>1</th>
+										<th>2</th>
+										<th>3</th>
+										<th>4</th>
+										<th>5</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Facilidad contacto</td>
+											<td class="">
+												<input required type="radio" name="cgr_04" id="cgr_04_1" class="form-control" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_04" id="cgr_04_2" class="form-control" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_04" id="cgr_04_3" class="form-control" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_04" id="cgr_04_4" class="form-control" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_04" id="cgr_04_5" class="form-control" value="5">
+											</td>
+										</tr>
+										<tr>
+											<td>Rapidez contacto</td>
+											<td>
+												<input required type="radio" name="cgr_05" id="cgr_05_1" class="form-control" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_05" id="cgr_05_2" class="form-control" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_05" id="cgr_05_3" class="form-control" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_05" id="cgr_05_4" class="form-control" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_05" id="cgr_05_5" class="form-control" value="5">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div align="justify" class="subTitle"><b>EJECUTIVO COMERCIAL</b></div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">5</span>
+					<article class="card">
+						<div class="card-body">
+							<label>¿Tuvo contacto con un ejecutivo comercial?</label>
+							<br>
+							<br>
+							<table class="table table-striped table-sm table-bordered text-center" id="table-det">
+								<thead>
+									<th>Si</th>
+									<th>No</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">
+											<input required type="radio" name="cgr_01_personalite" id="cgr_01_personalite_1" class="form-control" value="Si">
+										</td>
+										<td>
+											<input required type="radio" name="cgr_01_personalite" id="cgr_01_personalite_2" class="form-control" value="No">
+										</td>
+									</tr>
+								</tbody>
+							</table>		
+						</div>
+					</article>
+				</div>
+                <div class="col-md-12" id="rowQuestion2">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">6</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Califique de 1 a 5 su experiencia con el ejecutivo de cuenta en donde 1 es el puntaje más bajo y 5 el más alto.</p>
+							<br>			
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>1</th>
+										<th>2</th>
+										<th>3</th>
+										<th>4</th>
+										<th>5</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>El ejecutivo comercial entendió sus necesidades</td>
+											<td class="">
+												<input required type="radio" name="cgr_06" id="cgr_06_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_06" id="cgr_06_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_06" id="cgr_06_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_06" id="cgr_06_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_06" id="cgr_06_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+										<tr>
+											<td>La oferta estuvo acorde a sus expectativas</td>
+											<td>
+												<input required type="radio" name="cgr_07" id="cgr_07_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_07" id="cgr_07_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_07" id="cgr_07_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_07" id="cgr_07_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_07" id="cgr_07_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+                                        <tr>
+											<td>La propuesta fue Clara</td>
+											<td>
+												<input required type="radio" name="cgr_08" id="cgr_08_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_08" id="cgr_08_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_08" id="cgr_08_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_08" id="cgr_08_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_08" id="cgr_08_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+                                        <tr>
+											<td>La atención fue amable</td>
+											<td>
+												<input required type="radio" name="cgr_09" id="cgr_09_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_09" id="cgr_09_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_09" id="cgr_09_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_09" id="cgr_09_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_09" id="cgr_09_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+                                        <tr>
+											<td>El asesor tenía un buen conocimiento del producto.</td>
+											<td>
+												<input required type="radio" name="cgr_10" id="cgr_10_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_10" id="cgr_10_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_10" id="cgr_10_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_10" id="cgr_10_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_10" id="cgr_10_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Solucionaron sus dudas.</td>
+											<td>
+												<input required type="radio" name="cgr_11" id="cgr_11_1" class="form-control question6" value="1">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_11" id="cgr_11_2" class="form-control question6" value="2">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_11" id="cgr_11_3" class="form-control question6" value="3">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_11" id="cgr_11_4" class="form-control question6" value="4">
+											</td>
+											<td>
+												<input required type="radio" name="cgr_11" id="cgr_11_5" class="form-control question6" value="5">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12 p-0 m-0" id="rowQuestion4">
+                    <div align="justify" class="subTitle"><b>PROPUESTA COMERCIAL</b></div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">7</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 la propuesta recibida en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Costo de servicio</td>
+                                                <td class="">
+                                                    <input required type="radio" name="cgr_12" id="cgr_12_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_12" id="cgr_12_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_12" id="cgr_12_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_12" id="cgr_12_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_12" id="cgr_12_5" class="form-control" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Tiempo de respuesta</td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_13" id="cgr_13_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_13" id="cgr_13_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_13" id="cgr_13_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_13" id="cgr_13_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_13" id="cgr_13_5" class="form-control" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Valores agregados</td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_14" id="cgr_14_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_14" id="cgr_14_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_14" id="cgr_14_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_14" id="cgr_14_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_14" id="cgr_14_5" class="form-control" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Coherencia del servicio ofrecido con lo recibido</td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_15" id="cgr_15_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_15" id="cgr_15_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_15" id="cgr_15_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_15" id="cgr_15_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_15" id="cgr_15_5" class="form-control" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oportunidad en la entrega de la factura</td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_16" id="cgr_16_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_16" id="cgr_16_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_16" id="cgr_16_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_16" id="cgr_16_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_16" id="cgr_16_5" class="form-control" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Exactitud de la factura entregada.</td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_17" id="cgr_17_1" class="form-control" value="1">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_17" id="cgr_17_2" class="form-control" value="2">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_17" id="cgr_17_3" class="form-control" value="3">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_17" id="cgr_17_4" class="form-control" value="4">
+                                                </td>
+                                                <td>
+                                                    <input required type="radio" name="cgr_17" id="cgr_17_5" class="form-control" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div align="justify" class="subTitle"><b>PROGRAMACIÓN DEL SERVICIO</b></div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">8</span>
+					<article class="card">
+						<input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+						<div class="card-body">
+							<br>			
+							<div class="row" style="margin-left: 25px">
+                                <div class="col-md-12 form-group">
+                                    <div class="row form-group">
+                                        <div class="col-md-3">
+                                        <label class="firstLabel">Fecha de inicio del servicio</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="date" class="form-control firstInput" id="cgr_18" name="cgr_18" required="" />
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+					</article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">9</span>
+					<article class="card">
+						<input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+						<div class="card-body">
+							<br>			
+							<div class="row" style="margin-left: 25px">
+                                <div class="col-md-12 form-group">
+                                    <div class="row form-group">
+                                        <div class="col-md-3">
+                                        <label class="firstLabel">Fecha de finalización del servicio</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="date" class="form-control firstInput" id="cgr_19" name="cgr_19" required="" />
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+					</article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">10</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Servicio:</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Certificación Sistemas</td>
+											<td class="">
+												<input required type="radio" name="cgr_20" id="cgr_20_1" class="form-control" value="Certificación Sistemas">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Certificación Producto, Procesos y Servicios</td>
+											<td class="">
+												<input required type="radio" name="cgr_20" id="cgr_20_2" class="form-control" value="Certificación Producto, Procesos y Servicios">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Sostenibilidad</td>
+											<td class="">
+												<input required type="radio" name="cgr_20" id="cgr_20_3" class="form-control" value="Sostenibilidad">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">11</span>
+					<article class="card">
+						<input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+						<div class="card-body">
+							<br>			
+							<div class="row" style="margin-left: 25px">
+                                <div class="col-md-12 form-group">
+                                    <div class="row form-group">
+                                        <div class="col-md-3">
+                                        <label class="firstLabel">Referencial de la norma de auditoría </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control firstInput" id="cgr_21" name="cgr_21" required="" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+					</article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">12</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Tipo de servicio:</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Otorgamiento</td>
+											<td class="">
+												<input required type="radio" name="checkTest" id="checkTest1" class="form-control" value="Otorgamiento">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Renovación</td>
+											<td class="">
+												<input required type="radio" name="checkTest" id="checkTest2" class="form-control" value="Renovacion">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Seguimiento</td>
+											<td class="">
+												<input required type="radio" name="checkTest" id="checkTest3" class="form-control" value="Seguimiento">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Seguimiento ampliación / reducción </td>
+											<td class="">
+												<input required type="radio" name="checkTest" id="checkTest4" class="form-control" value="Seguimientoampliacion/reduccion">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12" id="rowQuestion2-2">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">13</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Una vez firmado el contrato la programación del servicio tardó:</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>De 1 a 15 días</td>
+											<td class="">
+												<input type="radio" name="cgr_22" id="cgr_22_1" class="form-control question13" value="De 1 a 15 días">
+											</td>
+										</tr>
+                                        <tr>
+											<td>De 16 a 30 días</td>
+											<td class="">
+												<input type="radio" name="cgr_22" id="cgr_22_2" class="form-control question13" value="De 16 a 30 días">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Más de 30 días</td>
+											<td class="">
+												<input type="radio" name="cgr_22" id="cgr_22_3" class="form-control question13" value="Más de 30 días">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12" id="rowQuestion4-4">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">14</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Su seguimiento / renovación fue programado:</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Entre uno y dos meses de anterioridad</td>
+											<td class="">
+												<input type="radio" name="cgr_23" id="cgr_23_1" class="form-control question14" value="Entre uno y dos meses de anterioridad">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Entre dos y tres meses de anterioridad</td>
+											<td class="">
+												<input type="radio" name="cgr_23" id="cgr_23_2" class="form-control question14" value="Entre dos y tres meses de anterioridad">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Con más de tres meses de anterioridad</td>
+											<td class="">
+												<input type="radio" name="cgr_23" id="cgr_23_3" class="form-control question14" value="Con más de tres meses de anterioridad">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Con menos de un mes de anterioridad</td>
+											<td class="">
+												<input type="radio" name="cgr_23" id="cgr_23_4" class="form-control question14" value="Con menos de un mes de anterioridad">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12">
+                    <span class="badge badge-pill badge-primary" id="numberQuestion">15</span>
+                    <article class="card">
+                        <div class="card-body">
+                            <p>De acuerdo con su respuesta anterior Califique de 1 a 5, en donde 1 es el puntaje más bajo y 5 el más alto.</p>
+                            <br>			
+                            <div class="table-responsive text-center">
+                                <table class="table table-striped table-sm table-bordered" id="table-det">
+                                    <thead>
+                                        <th>ITEM</th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                        <th>5</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>La programación fue oportuna</td>
+                                            <td class="">
+                                                <input required type="radio" name="cgr_24" id="cgr_24_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_24" id="cgr_24_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_24" id="cgr_24_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_24" id="cgr_24_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_24" id="cgr_24_5" class="form-control" value="5">
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Claridad en la notificación de la programación del servicio</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_25" id="cgr_25_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_25" id="cgr_25_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_25" id="cgr_25_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_25" id="cgr_25_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_25" id="cgr_25_5" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>	
+                    </article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">16</span>
+					<article class="card">
+						<div class="card-body">
+							<label>Comentarios adicionales de la programación:  </label>
+							<textarea class="form-control" id="cgr_26" name="cgr_26"></textarea>
+							<br>
+						</div>
+					</article>
+				</div>
+                <div align="justify" class="subTitle"><b>PRESTACIÓN DEL SERVICIO</b></div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">17</span>
+					<article class="card">
+						<input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+						<div class="card-body">
+							<br>			
+							<div class="row" style="margin-left: 25px">
+                                <div class="col-md-12 form-group">
+                                    <div class="row form-group">
+                                        <div class="col-md-3">
+                                        <label class="firstLabel">Nombre del auditor líder </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" class="form-control firstInput" id="cgr_27" name="cgr_27" required="" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+					</article>
+                </div>
+                <div class="col-md-12">
+                    <span class="badge badge-pill badge-primary" id="numberQuestion">18</span>
+                    <article class="card">
+                        <div class="card-body">
+                            <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                            <br>			
+                            <div class="table-responsive text-center">
+                                <table class="table table-striped table-sm table-bordered" id="table-det">
+                                    <thead>
+                                        <th>ITEM</th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                        <th>5</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Conocimiento y dominio técnico del auditor líder</td>
+                                            <td class="">
+                                                <input required type="radio" name="cgr_28" id="cgr_28_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_28" id="cgr_28_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_28" id="cgr_28_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_28" id="cgr_28_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_28" id="cgr_28_5" class="form-control" value="5">
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Amabilidad y actitud constructiva del auditor líder</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_29" id="cgr_29_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_29" id="cgr_29_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_29" id="cgr_29_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_29" id="cgr_29_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_29" id="cgr_29_5" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Puntualidad en el desarrollo de las actividades</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_30" id="cgr_30_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_30" id="cgr_30_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_30" id="cgr_30_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_30" id="cgr_30_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_30" id="cgr_30_5" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>La auditoría generó valor agregado a su organización</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_31" id="cgr_31_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_31" id="cgr_31_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_31" id="cgr_31_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_31" id="cgr_31_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_31" id="cgr_31_5" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_32" id="cgr_32_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_32" id="cgr_32_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_32" id="cgr_32_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_32" id="cgr_32_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_32" id="cgr_32_5" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>	
+                    </article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">19</span>
+					<article class="card">
+						<div class="card-body">
+							<label>¿Con cuántos evaluadores tuvo contacto? Sin contar el auditor líder</label>
+							<br>
+							<br>
+							<table class="table table-striped table-sm table-bordered text-center" id="table-det">
+								<thead>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>Ninguno</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="">
+											<input required type="radio" name="countNumberContact" id="countNumberContact1" class="form-control" value="1">
+										</td>
+										<td>
+											<input required type="radio" name="countNumberContact" id="countNumberContact2" class="form-control" value="2">
+										</td>
+                                        <td>
+											<input required type="radio" name="countNumberContact" id="countNumberContact3" class="form-control" value="3">
+										</td>
+                                        <td>
+											<input required type="radio" name="countNumberContact" id="countNumberContact4" class="form-control" value="4">
+										</td>
+                                        <td>
+											<input required type="radio" name="countNumberContact" id="countNumberContact5" class="form-control" value="5">
+										</td>
+                                        <td>
+											<input required type="radio" name="countNumberContact" id="countNumberContact0" class="form-control" value="0">
+										</td>
+									</tr>
+								</tbody>
+							</table>		
+						</div>
+					</article>
+				</div>
+                <div class="col-md-12 p-0 m-0" id="contentQuestionContact1">
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">20</span>
+                        <article class="card">
+                            <input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+                            <div class="card-body">
+                                <br>			
+                                <div class="row" style="margin-left: 25px">
+                                    <div class="col-md-12 form-group">
+                                        <div class="row form-group">
+                                            <div class="col-md-3">
+                                            <label class="firstLabel">Nombre del auditor acompañante 1</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control firstInput auditorCheck1" id="cgr_33" name="cgr_33" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">21</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conocimiento y dominio técnico del auditor 1</td>
+                                                <td class="">
+                                                    <input type="radio" name="cgr_34" id="cgr_34_1" class="form-control auditorCheck1" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_34" id="cgr_34_2" class="form-control auditorCheck1" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_34" id="cgr_34_3" class="form-control auditorCheck1" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_34" id="cgr_34_4" class="form-control auditorCheck1" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_34" id="cgr_34_5" class="form-control auditorCheck1" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Amabilidad y actitud constructiva de los auditores del auditor 1</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_35" id="cgr_35_1" class="form-control auditorCheck1" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_35" id="cgr_35_2" class="form-control auditorCheck1" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_35" id="cgr_35_3" class="form-control auditorCheck1" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_35" id="cgr_35_4" class="form-control auditorCheck1" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_35" id="cgr_35_5" class="form-control auditorCheck1" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puntualidad en el desarrollo de las actividades</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_36" id="cgr_36_1" class="form-control auditorCheck1" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_36" id="cgr_36_2" class="form-control auditorCheck1" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_36" id="cgr_36_3" class="form-control auditorCheck1" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_36" id="cgr_36_4" class="form-control auditorCheck1" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_36" id="cgr_36_5" class="form-control auditorCheck1" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La auditoría generó valor agregado a su organización</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_37" id="cgr_37_1" class="form-control auditorCheck1" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_37" id="cgr_37_2" class="form-control auditorCheck1" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_37" id="cgr_37_3" class="form-control auditorCheck1" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_37" id="cgr_37_4" class="form-control auditorCheck1" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_37" id="cgr_37_5" class="form-control auditorCheck1" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_38" id="cgr_38_1" class="form-control auditorCheck1" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_38" id="cgr_38_2" class="form-control auditorCheck1" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_38" id="cgr_38_3" class="form-control auditorCheck1" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_38" id="cgr_38_4" class="form-control auditorCheck1" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_38" id="cgr_38_5" class="form-control auditorCheck1" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-12 p-0 m-0" id="contentQuestionContact2">
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">22</span>
+                        <article class="card">
+                            <input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+                            <div class="card-body">
+                                <br>			
+                                <div class="row" style="margin-left: 25px">
+                                    <div class="col-md-12 form-group">
+                                        <div class="row form-group">
+                                            <div class="col-md-3">
+                                            <label class="firstLabel">Nombre del auditor acompañante 2 </label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control firstInput auditorCheck2" id="cgr_39" name="cgr_39" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">23</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conocimiento y dominio técnico del auditor 2</td>
+                                                <td class="">
+                                                    <input type="radio" name="cgr_40" id="cgr_40_1" class="form-control auditorCheck2" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_40" id="cgr_40_2" class="form-control auditorCheck2" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_40" id="cgr_40_3" class="form-control auditorCheck2" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_40" id="cgr_40_4" class="form-control auditorCheck2" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_40" id="cgr_40_5" class="form-control auditorCheck2" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Amabilidad y actitud constructiva de los auditores del auditor 2</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_41" id="cgr_41_1" class="form-control auditorCheck2" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_41" id="cgr_41_2" class="form-control auditorCheck2" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_41" id="cgr_41_3" class="form-control auditorCheck2" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_41" id="cgr_41_4" class="form-control auditorCheck2" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_41" id="cgr_41_5" class="form-control auditorCheck2" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puntualidad en el desarrollo de las actividades</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_42" id="cgr_42_1" class="form-control auditorCheck2" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_42" id="cgr_42_2" class="form-control auditorCheck2" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_42" id="cgr_42_3" class="form-control auditorCheck2" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_42" id="cgr_42_4" class="form-control auditorCheck2" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_42" id="cgr_42_5" class="form-control auditorCheck2" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La auditoría generó valor agregado a su organización</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_43" id="cgr_43_1" class="form-control auditorCheck2" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_43" id="cgr_43_2" class="form-control auditorCheck2" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_43" id="cgr_43_3" class="form-control auditorCheck2" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_43" id="cgr_43_4" class="form-control auditorCheck2" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_43" id="cgr_43_5" class="form-control auditorCheck2" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_44" id="cgr_44_1" class="form-control auditorCheck2" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_44" id="cgr_44_2" class="form-control auditorCheck2" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_44" id="cgr_44_3" class="form-control auditorCheck2" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_44" id="cgr_44_4" class="form-control auditorCheck2" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_44" id="cgr_44_5" class="form-control auditorCheck2" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-12 p-0 m-0" id="contentQuestionContact3">
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">24</span>
+                        <article class="card">
+                            <input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+                            <div class="card-body">
+                                <br>			
+                                <div class="row" style="margin-left: 25px">
+                                    <div class="col-md-12 form-group">
+                                        <div class="row form-group">
+                                            <div class="col-md-3">
+                                            <label class="firstLabel">Nombre del auditor acompañante 3</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control firstInput auditorCheck3" id="cgr_45" name="cgr_45" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">25</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conocimiento y dominio técnico del auditor 3</td>
+                                                <td class="">
+                                                    <input type="radio" name="cgr_46" id="cgr_46_1" class="form-control auditorCheck3" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_46" id="cgr_46_2" class="form-control auditorCheck3" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_46" id="cgr_46_3" class="form-control auditorCheck3" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_46" id="cgr_46_4" class="form-control auditorCheck3" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_46" id="cgr_46_5" class="form-control auditorCheck3" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Amabilidad y actitud constructiva de los auditores del auditor 3</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_47" id="cgr_47_1" class="form-control auditorCheck3" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_47" id="cgr_47_2" class="form-control auditorCheck3" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_47" id="cgr_47_3" class="form-control auditorCheck3" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_47" id="cgr_47_4" class="form-control auditorCheck3" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_47" id="cgr_47_5" class="form-control auditorCheck3" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puntualidad en el desarrollo de las actividades</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_48" id="cgr_48_1" class="form-control auditorCheck3" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_48" id="cgr_48_2" class="form-control auditorCheck3" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_48" id="cgr_48_3" class="form-control auditorCheck3" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_48" id="cgr_48_4" class="form-control auditorCheck3" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_48" id="cgr_48_5" class="form-control auditorCheck3" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La auditoría generó valor agregado a su organización</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_49" id="cgr_49_1" class="form-control auditorCheck3" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_49" id="cgr_49_2" class="form-control auditorCheck3" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_49" id="cgr_49_3" class="form-control auditorCheck3" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_49" id="cgr_49_4" class="form-control auditorCheck3" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_49" id="cgr_49_5" class="form-control auditorCheck3" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_50" id="cgr_50_1" class="form-control auditorCheck3" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_50" id="cgr_50_2" class="form-control auditorCheck3" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_50" id="cgr_50_3" class="form-control auditorCheck3" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_50" id="cgr_50_4" class="form-control auditorCheck3" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_50" id="cgr_50_5" class="form-control auditorCheck3" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-12 p-0 m-0" id="contentQuestionContact4">
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">26</span>
+                        <article class="card">
+                            <input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+                            <div class="card-body">
+                                <br>			
+                                <div class="row" style="margin-left: 25px">
+                                    <div class="col-md-12 form-group">
+                                        <div class="row form-group">
+                                            <div class="col-md-3">
+                                            <label class="firstLabel">Nombre del auditor acompañante 4</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control firstInput auditorCheck4" id="cgr_51" name="cgr_51" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">27</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conocimiento y dominio técnico del auditor 4</td>
+                                                <td class="">
+                                                    <input type="radio" name="cgr_52" id="cgr_52_1" class="form-control auditorCheck4" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_52" id="cgr_52_2" class="form-control auditorCheck4" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_52" id="cgr_52_3" class="form-control auditorCheck4" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_52" id="cgr_52_4" class="form-control auditorCheck4" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_52" id="cgr_52_5" class="form-control auditorCheck4" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Amabilidad y actitud constructiva de los auditores del auditor 4</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_53" id="cgr_53_1" class="form-control auditorCheck4" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_53" id="cgr_53_2" class="form-control auditorCheck4" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_53" id="cgr_53_3" class="form-control auditorCheck4" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_53" id="cgr_53_4" class="form-control auditorCheck4" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_53" id="cgr_53_5" class="form-control auditorCheck4" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puntualidad en el desarrollo de las actividades</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_54" id="cgr_54_1" class="form-control auditorCheck4" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_54" id="cgr_54_2" class="form-control auditorCheck4" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_54" id="cgr_54_3" class="form-control auditorCheck4" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_54" id="cgr_54_4" class="form-control auditorCheck4" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_54" id="cgr_54_5" class="form-control auditorCheck4" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La auditoría generó valor agregado a su organización</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_55" id="cgr_55_1" class="form-control auditorCheck4" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_55" id="cgr_55_2" class="form-control auditorCheck4" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_55" id="cgr_55_3" class="form-control auditorCheck4" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_55" id="cgr_55_4" class="form-control auditorCheck4" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_55" id="cgr_55_5" class="form-control auditorCheck4" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_56" id="cgr_56_1" class="form-control auditorCheck4" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_56" id="cgr_56_2" class="form-control auditorCheck4" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_56" id="cgr_56_3" class="form-control auditorCheck4" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_56" id="cgr_56_4" class="form-control auditorCheck4" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_56" id="cgr_56_5" class="form-control auditorCheck4" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-12 p-0 m-0" id="contentQuestionContact5">
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">28</span>
+                        <article class="card">
+                            <input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+                            <div class="card-body">
+                                <br>			
+                                <div class="row" style="margin-left: 25px">
+                                    <div class="col-md-12 form-group">
+                                        <div class="row form-group">
+                                            <div class="col-md-3">
+                                            <label class="firstLabel">Nombre del auditor acompañante 5</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" class="form-control firstInput auditorCheck5" id="cgr_57" name="cgr_57" required="" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="col-md-12">
+                        <span class="badge badge-pill badge-primary" id="numberQuestion">29</span>
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Califique de 1 a 5 los siguientes criterios referente a este servicio, en donde 1 es el puntaje más bajo y 5 el más alto</p>
+                                <br>			
+                                <div class="table-responsive text-center">
+                                    <table class="table table-striped table-sm table-bordered" id="table-det">
+                                        <thead>
+                                            <th>ITEM</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>3</th>
+                                            <th>4</th>
+                                            <th>5</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Conocimiento y dominio técnico del auditor 5</td>
+                                                <td class="">
+                                                    <input type="radio" name="cgr_58" id="cgr_58_1" class="form-control auditorCheck5" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_58" id="cgr_58_2" class="form-control auditorCheck5" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_58" id="cgr_58_3" class="form-control auditorCheck5" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_58" id="cgr_58_4" class="form-control auditorCheck5" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_58" id="cgr_58_5" class="form-control auditorCheck5" value="5">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>Amabilidad y actitud constructiva de los auditores del auditor 5</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_59" id="cgr_59_1" class="form-control auditorCheck5" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_59" id="cgr_59_2" class="form-control auditorCheck5" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_59" id="cgr_59_3" class="form-control auditorCheck5" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_59" id="cgr_59_4" class="form-control auditorCheck5" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_59" id="cgr_59_5" class="form-control auditorCheck5" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Puntualidad en el desarrollo de las actividades</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_60" id="cgr_60_1" class="form-control auditorCheck5" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_60" id="cgr_60_2" class="form-control auditorCheck5" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_60" id="cgr_60_3" class="form-control auditorCheck5" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_60" id="cgr_60_4" class="form-control auditorCheck5" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_60" id="cgr_60_5" class="form-control auditorCheck5" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La auditoría generó valor agregado a su organización</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_61" id="cgr_61_1" class="form-control auditorCheck5" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_61" id="cgr_61_2" class="form-control auditorCheck5" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_61" id="cgr_61_3" class="form-control auditorCheck5" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_61" id="cgr_61_4" class="form-control auditorCheck5" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_61" id="cgr_61_5" class="form-control auditorCheck5" value="5">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>La información reportada en la auditoria es coherente con el contenido del informe</td>
+                                                <td>
+                                                    <input type="radio" name="cgr_62" id="cgr_62_1" class="form-control auditorCheck5" value="1">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_62" id="cgr_62_2" class="form-control auditorCheck5" value="2">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_62" id="cgr_62_3" class="form-control auditorCheck5" value="3">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_62" id="cgr_62_4" class="form-control auditorCheck5" value="4">
+                                                </td>
+                                                <td>
+                                                    <input type="radio" name="cgr_62" id="cgr_62_5" class="form-control auditorCheck5" value="5">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>	
+                        </article>
+                    </div>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">30</span>
+					<article class="card">
+						<div class="card-body">
+							<label>Utilice este espacio si considera que necesita incluir comentaros adicionales para otros miembros del equipo auditor</label>
+							<textarea class="form-control" id="cgr_63" name="cgr_63"></textarea>
+							<br>
+						</div>
+					</article>
+				</div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">31</span>
+					<article class="card">
+						<div class="card-body">
+							<p>Una vez finalizada la auditoría de campo y entregados los resultados de ensayos a conformidad y la información requerida por el auditor (si aplica), la entrega del informe fue:</p>
+							<br>
+							<div class="table-responsive text-center">
+								<table class="table table-striped table-sm table-bordered" id="table-det">
+									<thead>
+										<th>ITEM</th>
+										<th>CHECK</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td>De 0 a 30 días después</td>
+											<td class="">
+												<input required type="radio" name="cgr_64" id="cgr_64_1" class="form-control" value="De 0 a 30 días después">
+											</td>
+										</tr>
+                                        <tr>
+											<td>De 30 a 60 días después</td>
+											<td class="">
+												<input required type="radio" name="cgr_64" id="cgr_64_2" class="form-control" value="De 30 a 60 días después">
+											</td>
+										</tr>
+                                        <tr>
+											<td>Más de 60 días después</td>
+											<td class="">
+												<input required type="radio" name="cgr_64" id="cgr_64_3" class="form-control" value="Más de 60 días después">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>	
+					</article>
+				</div>
+                <div class="col-md-12">
+                    <span class="badge badge-pill badge-primary" id="numberQuestion">32</span>
+                    <article class="card">
+                        <div class="card-body">
+                            <p>Califique de 1 a 5, en donde 1 es el puntaje más bajo y 5 el más alto.</p>
+                            <br>			
+                            <div class="table-responsive text-center">
+                                <table class="table table-striped table-sm table-bordered" id="table-det">
+                                    <thead>
+                                        <th>ITEM</th>
+                                        <th>1</th>
+                                        <th>2</th>
+                                        <th>3</th>
+                                        <th>4</th>
+                                        <th>5</th>
+                                        <th>N/A</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Oportunidad en la entrega del informe</td>
+                                            <td class="">
+                                                <input required type="radio" name="cgr_65" id="cgr_65_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_65" id="cgr_65_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_65" id="cgr_65_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_65" id="cgr_65_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_65" id="cgr_65_5" class="form-control" value="5">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_65" id="cgr_65_6" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oportunidad en la entrega del certificado</td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_1" class="form-control" value="1">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_2" class="form-control" value="2">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_3" class="form-control" value="3">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_4" class="form-control" value="4">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_5" class="form-control" value="5">
+                                            </td>
+                                            <td>
+                                                <input required type="radio" name="cgr_66" id="cgr_66_6" class="form-control" value="5">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>	
+                    </article>
+                </div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion">33</span>
+					<article class="card">
+						<div class="card-body">
+							<label>Utilice este espacio si considera que necesita incluir comentaros adicionales sobre los entregables del servicio (informe y certificado):</label>
+							<textarea class="form-control" id="cgr_67" name="cgr_67"></textarea>
+							<br>
+						</div>
+					</article>
+				</div>
+				<div align="justify" class="subTitle"><b>DEMOGRAFICO</b></div>
+                <div class="col-md-12">
+					<span class="badge badge-pill badge-primary" id="numberQuestion"></span>
+					<article class="card">
+						<input required type="hidden" name="email" autocomplete="off" class="form-control" value="" readonly>
+						<div class="card-body">
+							<br>			
+							<div class="row" style="margin-left: 25px">
+							    <div class="col-md-12 form-group">
+									<div class="row form-group">
+										<div class="col-md-3 col-sm-12">
+											<label class="firstLabel">Nombre de la institución / empresa / coorporación</label>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<input type="text" class="form-control firstInput" id="nombre_institucion" name="nombre_institucion" required="" autocomplete="off">
+											<div class="valid-feedback">Campo validado.</div>
+											<div class="invalid-feedback">Por favor llena este campo.</div>
+										</div>
+									</div>
+									
+									<div class="row form-group">
+										<div class="col-md-3 col-sm-12">
+										<label class="firstLabel">Nombre  </label>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<input type="text" class="form-control firstInput" id="nombre" name="nombre" required="" autocomplete="off">
+											<div class="valid-feedback">Campo validado.</div>
+											<div class="invalid-feedback">Por favor llena este campo.</div>
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col-md-3 col-sm-12">
+										<label class="firstLabel">Cargo </label>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<input type="text" class="form-control firstInput" id="cargo" name="cargo" required="" autocomplete="off">
+											<div class="valid-feedback">Campo validado.</div>
+											<div class="invalid-feedback">Por favor llena este campo.</div>
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="col-md-3 col-sm-12">
+										<label class="firstLabel">Correo </label>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<input type="email" class="form-control firstInput" id="correo" name="correo" required="" autocomplete="off">
+											<div class="valid-feedback">Campo validado.</div>
+											<div class="invalid-feedback">Por favor llena este campo.</div>
+										</div>
+									</div>
+                                    <div class="row form-group">
+										<div class="col-md-3 col-sm-12">
+										<label class="firstLabel">Ciudad</label>
+										</div>
+										<div class="col-md-6 col-sm-12">
+											<input type="text" class="form-control firstInput" id="city" name="city" required="" autocomplete="off">
+											<div class="valid-feedback">Campo validado.</div>
+											<div class="invalid-feedback">Por favor llena este campo.</div>
+										</div>
+									</div>
+							    </div>
+							</div>
+					    </article>
+					</div>
+				</div>
+			</div>	
+			<div class="row">
+				
+				<div class="col-md-12 btnSend">
+					
+					<button name="sub" id="sub" class="btn btn-primary">Enviar encuesta</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<footer>
+		<p>&copy; 2022 Powered By <a href="https://www.gerentedenegocios.com/" target="_blank"><img src="https://admin.dataella.com/capturador/Icontec/Enc_ICONTEC2021/images/banner-2022.jpg"   width="200"></a></p>
+	</footer>
+</body>
+<script type="text/javascript">
+    var lengthPanel = 6;
+</script>
+</html>
