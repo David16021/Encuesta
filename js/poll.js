@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('input[type="radio"][name="pregunta_01"]').change(function() {
+    $('input[type="radio"][name="cgr_01"]').change(function() {
         switch(this.value) {
             case 'Si':
                 if(document.getElementsByClassName('question2').length) {
@@ -31,7 +31,7 @@ $(document).ready(function() {
                 break;
         }
     });
-    $('input[type="radio"][name="pregunta5"]').change(function() {
+    $('input[type="radio"][name="cgr_01_personalite"]').change(function() {
         switch(this.value) {
             case 'Si':
                 $('.question6').attr('required', true);
@@ -45,7 +45,7 @@ $(document).ready(function() {
                 break;
         }
     });
-    $('input[type="radio"][name="pregunta5_unique"]').change(function() {
+    $('input[type="radio"][name="cgr_01_unique"]').change(function() {
         switch(this.value) {
             case 'Si':
                 if(document.getElementsByClassName("question7unique").length) {
@@ -75,7 +75,7 @@ $(document).ready(function() {
                 if(!document.getElementsByClassName("question8unique").length) {
                     $("#rowQuestion3").css('display', 'block');
                 } else {
-                    var question6uniqueValue = $('input[name="pregunta6_1_unique"]:checked').val();
+                    var question6uniqueValue = $('input[name="cgr_06_unique"]:checked').val();
                     if(question6uniqueValue !== undefined) {
                         $("#rowQuestion3").css('display', 'block');
                     }
@@ -84,7 +84,7 @@ $(document).ready(function() {
                 break;
         }
     });
-    $('input[type="radio"][name="pregunta12"]').change(function() {
+    $('input[type="radio"][name="checkTest"]').change(function() {
         switch(this.value) {
             case 'Otorgamiento':
                 $('.question13').attr('required', true);
@@ -112,7 +112,7 @@ $(document).ready(function() {
                 break;
         }
     });
-    $('input[type="radio"][name="pregunta19"]').change(function() {
+    $('input[type="radio"][name="countNumberContact"]').change(function() {
         if(parseInt(this.value) > 0) {
             for(var i = 1; i < lengthPanel; i++) {
                 if(i <= this.value) {
@@ -131,7 +131,7 @@ $(document).ready(function() {
         }
     });
     $('.check-otro').change(function() {
-        var controlName = this.name === 'pregunta3' ? 'who' : 'who_a';
+        var controlName = this.name === 'cgr_03' ? 'who' : 'who_a';
         switch(this.value) {
             case 'Otro':
                 $("#" + controlName).attr('required', true);
@@ -141,7 +141,7 @@ $(document).ready(function() {
                 break;
         }
     });
-    $('input[type="radio"][name="pregunta6_1_unique"]').change(function() {
+    $('input[type="radio"][name="cgr_06_unique"]').change(function() {
         $("#rowQuestion3").css('display', 'block');
     });
 });
